@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Planszostrefa - remove unavailable games",
+  "version": "1.0",
+  "description": "Removes unavailable games so they are not displayed",
+  "content_scripts": [
+    {
+      "matches": ["*://planszostrefa.pl/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
